@@ -1,106 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Clothify | Women’s Fashion</title>
-
-    <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-
-    <!-- Bootstrap Icons -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
-
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom CSS -->
-    <link href="css/styles.css" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wear Zane | Fashion Store</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
-
 <body>
 
-<!-- ================= NAVBAR ================= -->
-<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
-    <div class="container">
-        <a class="navbar-brand" href="#">
-            <img src="assets/images/Pink Simple Illustration Fashion Store Logo (2).png" height="70" alt="Clothify">
-        </a>
-
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navMenu">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Women</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">New Arrivals</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">About</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
-            </ul>
-        </div>
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">ZANE</div>
+    <nav>
+      <a href="#">Women</a>
+      <a href="#">Men</a>
+      <a href="#">New Arrivals</a>
+      <a href="#">Sale</a>
+    </nav>
+    <div class="nav-icons">
+      <span id="cart-count">🛒 0</span>
     </div>
-</nav>
+  </header>
 
-<!-- ================= HERO VIDEO ================= -->
-<header class="hero-video mt-5 pt-4">
-    <video autoplay muted loop playsinline>
-        <source src="assets/videos/Promo.mp4" type="video/mp4">
-    </video>
-</header>
+  <!-- Hero -->
+  <section class="hero">
+    <h1>New Season Styles</h1>
+    <p>Elevate your wardrobe</p>
+    <button>Shop Now</button>
+  </section>
 
-<!-- ================= CATEGORIES ================= -->
-<section class="py-5">
-    <div class="container">
-        <h2 class="text-center mb-5 fw-bold">Shop by Category</h2>
+  <!-- Products -->
+  <section class="products">
+    <h2>Featured Products</h2>
+    <div class="product-grid" id="productGrid"></div>
+  </section>
 
-        <div class="row g-4">
-            <div class="col-md-4">
-                <div class="category-card">
-                    <img src="assets/images/category1.jpg" alt="Unstitched">
-                    <div class="category-overlay">Unstitched</div>
-                </div>
-            </div>
+  <!-- Footer -->
+  <footer>
+    <p>© 2026 Zane. All rights reserved.</p>
+  </footer>
 
-            <div class="col-md-4">
-                <div class="category-card">
-                    <img src="assets/images/category2.jpg" alt="Ready to Wear">
-                    <div class="category-overlay">Ready to Wear</div>
-                </div>
-            </div>
-
-            <div class="col-md-4">
-                <div class="category-card">
-                    <img src="assets/images/category3.jpg" alt="New Arrivals">
-                    <div class="category-overlay">New Arrivals</div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- ================= ABOUT ================= -->
-<section class="bg-light py-5">
-    <div class="container text-center">
-        <h2 class="fw-bold mb-3">Clothify</h2>
-        <p class="text-muted">
-            Celebrating women’s fashion with elegance, tradition, and modern design.
-            Crafted for confidence. Designed for today’s woman.
-        </p>
-    </div>
-</section>
-
-<!-- ================= FOOTER ================= -->
-<footer class="bg-dark text-white py-4">
-    <div class="container text-center">
-        <p class="mb-1">&copy; 2026 Clothify. All Rights Reserved.</p>
-        <small>Women’s Fashion Brand | Pakistan</small>
-    </div>
-</footer>
-
-<!-- Bootstrap JS -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-
+  <script src="script.js"></script>
 </body>
 </html>
